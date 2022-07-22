@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+body {
+    width: 100vw;
+    background-color: #F3F3F4;
+    display: flex;
+    overflow: hidden;
+}
+
+.nav-container {
+    width: 10.5%;
+    height: 100vh;
+    background-color: #2F4050;
+}
+
+.nav-head {
+    width: 100%;
+    height: 180px;
+    background-color: #293846;
+    color: #A7B1C2;
+}
+
+.nav-items button {
+    border: none;
+    width: 100%;
+    height: 47px;
+    background-color: #2F4050;
+    color: #A7B1C2;
+    text-align: left;
+    padding-left: 30px;
+}
+
+    .nav-items button:hover {
+        background-color: #293846;
+    }
+
+    .nav-items button:focus {
+        background-color: #293846;
+        color: #FFFFFF;
+    }
+
+.main-container {
+    width: 89.5%;
+    height: 100vh;
+}
+
+.main-head {
+    margin-top: 45px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: grey;
+}
+
+main {
+    margin: 20px 25px 0px 25px;
+}
+
+.main-head-body {
+    background-color: blue;
+    height: 47px;
+    border-bottom: 4px grey;
+}
+
+.main-body {
+    background-color: white;
+    margin-top: 3px;
+    padding: 30px;
+}
+
+.nav-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+
+.head-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-width: 10px;
+    border-bottom-color: #F3F3F4;
+    margin: 0px;
+}
+
+.cadastrar {
+    padding: 3px 15px 3px 15px;
+    background-color: #018080;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+
+.col-icons {
+    display: flex;
+    justify-content: end;
+}
+
+svg {
+    margin: 0px 3px 0px 3px;
+}
+
+.btnsalvar {
+    background-color: #018080;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+btn-outline-secondary {
+    border-color: grey;
+}

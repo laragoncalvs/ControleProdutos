@@ -1,0 +1,39 @@
+﻿@using CADASTRO_PRODUTOS.Enums
+@model ProdutoModel
+
+<form disabled class="row g-3"> 
+    <div class="col-md-3">
+    <label>Codigo</label>
+    <input type="text" asp-for ="ProdutoId" class="form-control" disabled/>
+    </div>
+    
+    <div class="col-md-9">
+    <label>Descrição</label>
+    <input type="text" asp-for ="Descricao" class="form-control" disabled />
+    </div>
+
+    <div class="col-md-4">
+    <label>Situação</label>
+    @Html.DropDownListFor(m => m.Situacao, 
+            new SelectList(Enum.GetValues(typeof(SituacaoEnum))), 
+            "Selecione",
+           new { @class = "form-select",
+                  disabled = "disabled"} ) 
+    </div>
+
+    <div class="col-md-4">
+    <label>Unidade</label>
+    @Html.DropDownListFor(m => m.Unidade, 
+            new SelectList(Enum.GetValues(typeof(UnidadeEnum))), 
+            "Selecione",
+            new { @class = "form-select",
+                  disabled = "disabled"} ) 
+    </div>
+
+    <div class="col-md-4">
+    <label>Peso Liquído (KG)</label>
+    <input type="text" asp-for ="PesoLiquido" class="form-control" disabled/>
+    </div>
+</form>
+
+<a role="button" class="btn btn-outline-secondary" asp-controller="Produto" asp-action="Index">Voltar</a>
